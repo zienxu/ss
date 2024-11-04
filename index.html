@@ -107,7 +107,36 @@
             margin: 5px 0 0;
             font-weight: bold;
         }
+         /* Add style for the toggle button */
+        .toggle-button {
+            background-color: #333;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 0;
+        }
+        .toggle-button:hover {
+            background-color: #555;
+        }
+        /* Hide sections initially */
+        .musician-content {
+            display: none;
+        }
     </style>
+    <script>
+        // Function to toggle visibility of each musician's section
+        function toggleSection(id) {
+            const section = document.getElementById(id);
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
 </head>
 <body>
 
@@ -161,6 +190,11 @@
         <!-- Guitarist Section -->
         <div id="guitarist" class="musician-section section">
             <h2>Guitarist</h2>
+             <!-- Toggle button -->
+        <button class="toggle-button" onclick="toggleSection('guitarist-content')">Show/Hide Guitarist Details</button>
+        <!-- Wrap the content in a div with an ID for toggling -->
+        <div id="guitarist-content" class="musician-content">    
+            
             <p><strong>Introduction:</strong> Self-taught guitarist since secondary school, she views her guitar as a ‘best friend,’ a companion that supports her on her musical journey.</p>
             <div class="video">
                 <h3>Fingerpicking and Percussive Rhythms</h3>
@@ -203,11 +237,17 @@
                 <!-- Placeholder for QR code -->
                 <img src="qr-code-placeholder.png" alt="QR Code" style="width: 100px;">
             </div>
-            
+        </div>
         </div>
         <!-- Other Musician Sections -->
         <div id="clarinetist" class="musician-section section">
             <h2>Clarinetist</h2>
+            <!-- Toggle button -->
+            <button class="toggle-button" onclick="toggleSection('clarinetist-content')">Show/Hide Clarinetist Details</button>
+        
+            <!-- Content for Clarinetist in toggle div -->
+            <div id="clarinetist-content" class="musician-content">
+                
             <p><strong>Introduction:</strong> A clarinetist with over a decade of experience, he views his instrument as a "close work acquaintance," balancing emotional connection with practical mastery.</p>             <div class="video">
                 <h3>Fingerpicking and Percussive Rhythms</h3>
                 <p class="quote">"At this moment, it felt more dynamic, because I was doing fingerpicking and some percussive movements, so it felt like I had a more rhythmic feel of the guitar rather than if I were just strumming."</p>
@@ -249,11 +289,16 @@
                 <!-- Placeholder for QR code -->
                 <img src="qr-code-placeholder.png" alt="QR Code" style="width: 100px;">
             </div>
-            
+        </div>
         </div>
 
         <div id="violinist" class="musician-section section">
             <h2>Violinist</h2>
+            <!-- Toggle button -->
+            <button class="toggle-button" onclick="toggleSection('violinist-content')">Show/Hide Violinist Details</button>
+        
+            <div id="violinist-content" class="musician-content">
+            
             <p><strong>Introduction:</strong> A dedicated violinist from age four, she shares a deep emotional connection with her instrument, seeing it as a part of herself and even likening it to a sibling.</p>
             <div class="violinist-video">    
                 <h3>Fingerpicking and Percussive Rhythms</h3>
@@ -296,11 +341,16 @@
                 <!-- Placeholder for QR code -->
                 <img src="qr-code-placeholder.png" alt="QR Code" style="width: 100px;">
             </div>
-        
+            </div>
         </div>
 
         <div id="drummer" class="musician-section section">
             <h2>Drummer</h2>
+            <!-- Toggle button -->
+            <button class="toggle-button" onclick="toggleSection('drummer-content')">Show/Hide Drummer Details</button>
+        
+            <div id="drummer-content" class="musician-content">
+                
              <p><strong>Introduction:</strong> A clarinetist with over a decade of experience, he views his instrument as a "close work acquaintance," balancing emotional connection with practical mastery.</p>             <div class="video">
              <div class="drummer-video">
                 <h3>Fingerpicking and Percussive Rhythms</h3>
@@ -343,10 +393,16 @@
                 <!-- Placeholder for QR code -->
                 <img src="qr-code-placeholder.png" alt="QR Code" style="width: 100px;">
             </div>
+            </div>
         </div>
 
         <div id="electone" class="musician-section section">
             <h2>Electone Player</h2>
+            <!-- Toggle button -->
+            <button class="toggle-button" onclick="toggleSection('electone-content')">Show/Hide Electone Player Details</button>
+        
+            <div id="electone-content" class="musician-content">
+                
              <p><strong>Introduction:</strong> A clarinetist with over a decade of experience, he views his instrument as a "close work acquaintance," balancing emotional connection with practical mastery.</p>             <div class="video">
              <div class="electone-video">   
                 <h3>Fingerpicking and Percussive Rhythms</h3>
@@ -389,6 +445,7 @@
                 <!-- Placeholder for QR code -->
                 <img src="qr-code-placeholder.png" alt="QR Code" style="width: 100px;">
             </div>
+        </div>
         </div>
     </div>
 </body>
