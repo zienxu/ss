@@ -38,30 +38,6 @@
         .section p {
             line-height: 1.6;
         }
-        .buttons-container {
-            display: flex;
-            justify-content: space-around;
-            margin: 20px 0;
-        }
-        .musician-button {
-            display: block;
-            text-align: center;
-            text-decoration: none;
-            color: black;
-            width: 150px;
-            padding: 10px;
-            background-color: #ddd;
-            border-radius: 8px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-        }
-        .musician-button img {
-            width: 100%;
-            height: auto;
-            border-radius: 8px;
-        }
-        .musician-button p {
-            margin: 5px 0 0;
-        }
         .musician-section {
             margin-top: 40px;
         }
@@ -81,35 +57,21 @@
             padding-left: 10px;
             border-left: 4px solid #333;
         }
-        /* Collapsible sections */
-        .collapsible {
-            background-color: #f1f1f1;
-            color: #333;
-            cursor: pointer;
-            padding: 10px;
-            width: 100%;
-            border: none;
-            text-align: left;
-            outline: none;
-            font-size: 18px;
+        /* Styling for individual content boxes */
+        .content-box {
+            background-color: #ffffff;
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin: 20px 0;
             border-radius: 8px;
-            margin-top: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
-        .active, .collapsible:hover {
-            background-color: #ccc;
-        }
-        .content {
-            padding: 0 18px;
-            display: none;
-            overflow: hidden;
-            background-color: #fff;
-            border-radius: 8px;
-            margin-top: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        }
-        .content p {
-            margin: 10px 0;
-            line-height: 1.6;
+        .content-box h2 {
+            color: #444;
+            font-size: 1.2em;
+            margin-bottom: 10px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
         }
     </style>
 </head>
@@ -163,7 +125,7 @@
         </div>
 
         <!-- Guitarist Section -->
-        <div id="guitarist" class="musician-section section content-section">
+        <div id="guitarist" class="musician-section section">
             <h2>Guitarist</h2>
             <p><strong>Introduction:</strong> Self-taught guitarist since secondary school, she views her guitar as a ‘best friend,’ a companion that supports her on her musical journey.</p>
             <div class="video">
@@ -174,33 +136,33 @@
             <p>Her journey began in secondary school, influenced by friends who played during recess. She was drawn to the guitar's versatility and ease of learning, finding it a flexible instrument for accompaniment.</p>
 
             <!-- Content sections for Guitarist -->
-            <div id="background-origin" class="content-section">
+            <div id="background-origin" class="content-box">
                 <h2>Background & Origin</h2>
                 <p>Starting in secondary school, she was drawn to guitar by the school’s vibrant music culture. Friends taught her basic chords, sparking a love for the instrument's versatility.</p>
             </div>
             
-            <div id="physical-comfort" class="content-section">
+            <div id="physical-comfort" class="content-box">
                 <h2>Physical Comfort & Adaptation</h2>
                 <p>Initially, the steel strings caused discomfort, limiting her playing time. Over time, callouses formed, allowing her to play with ease. She now appreciates the balance between the physical demands of playing and the comfort developed through practice.</p>
             </div>
             
-            <div id="tactile-awareness" class="content-section">
+            <div id="tactile-awareness" class="content-box">
                 <h2>Tactile Awareness & Rhythmic Connection</h2>
                 <p>Playing guitar requires a unique tactile awareness, especially during fingerpicking and rhythmic tapping, as seen in the video. She describes a conscious physicality when positioning her hands and wrists to play comfortably and effectively.</p>
             </div>
             
-            <div id="emotional-bond" class="content-section">
+            <div id="emotional-bond" class="content-box">
                 <h2>Emotional Bond with the Guitar</h2>
                 <p>She likens her guitar to a ‘best friend’ rather than an extension of herself. Her attachment goes beyond functionality; she regularly cleans and cares for her guitar, seeing it as a companion that brings her comfort.</p>
             </div>
             
-            <div id="mastery-touch" class="content-section">
+            <div id="mastery-touch" class="content-box">
                 <h2>Mastery of Touch & Identity Development</h2>
                 <p>As she hones her guitar skills, she begins to see herself as a musician on the path to mastery. She believes that improving her touch and control will affirm her identity as a guitarist.</p>
             </div>
 
             <!-- Reflection Prompt for Visitors -->
-            <div class="section">
+            <div class="content-box">
                 <h3>Reflection Prompt</h3>
                 <p><strong>Question for Visitors:</strong> How do you connect with the things you use often? Do they feel like extensions of yourself or companions in your journey?</p>
                 <p><em>Scan the QR code to share your thoughts:</em></p>
