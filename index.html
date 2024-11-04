@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Guitarist Biography - The Touch of Music</title>
+    <title>The Touch of Music: Ethnography Project</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -17,10 +17,10 @@
             overflow: hidden;
         }
         header {
-            background: #333;
-            color: #fff;
-            padding: 20px 0;
             text-align: center;
+            padding: 20px 0;
+            background: #333;
+            color: white;
         }
         header h1 {
             margin: 0;
@@ -37,6 +37,33 @@
         }
         .section p {
             line-height: 1.6;
+        }
+        .buttons-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .musician-button {
+            display: block;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            width: 150px;
+            padding: 10px;
+            background-color: #ddd;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        }
+        .musician-button img {
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+        }
+        .musician-button p {
+            margin: 5px 0 0;
+        }
+        .musician-section {
+            margin-top: 40px;
         }
         .video {
             text-align: center;
@@ -58,64 +85,78 @@
 </head>
 <body>
 
+    <!-- Header Section -->
     <header>
-        <h1>The Touch of Music: Guitarist's Journey</h1>
-        <p>Exploring the tactile and emotional connection of a guitarist with her instrument.</p>
+        <h1>The Touch of Music: Ethnography Project</h1>
+        <p>Exploring how musicians' tactile familiarity with their instruments shapes their identity and self-expression.</p>
     </header>
 
+    <!-- Introduction and Main Findings -->
     <div class="container">
-        
-        <!-- Introduction Section -->
         <div class="intro">
-            <img src="guitarist-photo.jpg" alt="Guitarist's Photo" style="width:100%; border-radius:8px;">
+            <h2>Project Overview</h2>
+            <p>This ethnography investigates the relationship between musicians and their instruments, focusing on how touch and familiarity shape their musical identity. Through interviews and observations, we've explored themes such as tactile awareness, emotional connection, mastery, and the impact of instrument familiarity on confidence and performance.</p>
+        </div>
+
+        <!-- Navigation Buttons -->
+        <div class="buttons-container">
+            <a href="#guitarist" class="musician-button">
+                <img src="guitarist-photo.jpg" alt="Guitarist">
+                <p>Guitarist</p>
+            </a>
+            <a href="#clarinetist" class="musician-button">
+                <img src="clarinetist-photo.jpg" alt="Clarinetist">
+                <p>Clarinetist</p>
+            </a>
+            <a href="#violinist" class="musician-button">
+                <img src="violinist-photo.jpg" alt="Violinist">
+                <p>Violinist</p>
+            </a>
+            <a href="#drummer" class="musician-button">
+                <img src="drummer-photo.jpg" alt="Drummer">
+                <p>Drummer</p>
+            </a>
+            <a href="#electone" class="musician-button">
+                <img src="electone-photo.jpg" alt="Electone Player">
+                <p>Electone Player</p>
+            </a>
+        </div>
+
+        <!-- Guitarist Section -->
+        <div id="guitarist" class="musician-section section">
+            <h2>Guitarist</h2>
             <p><strong>Introduction:</strong> Self-taught guitarist since secondary school, she views her guitar as a ‘best friend,’ a companion that supports her on her musical journey.</p>
+            <div class="video">
+                <h3>Fingerpicking and Percussive Rhythms</h3>
+                <p class="quote">"At this moment, it felt more dynamic, because I was doing fingerpicking and some percussive movements, so it felt like I had a more rhythmic feel of the guitar rather than if I were just strumming."</p>
+                <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
+            </div>
+            <p>Her journey began in secondary school, influenced by friends who played during recess. She was drawn to the guitar's versatility and ease of learning, finding it a flexible instrument for accompaniment.</p>
+            <!-- Additional sections for background, comfort, tactile awareness, etc., as discussed before -->
         </div>
 
-        <!-- Video Section -->
-        <div class="video">
-            <h2>Fingerpicking and Percussive Rhythms</h2>
-            <p class="quote">"At this moment, it felt more dynamic, because I was doing fingerpicking and some percussive movements, so it felt like I had a more rhythmic feel of the guitar rather than if I were just strumming."</p>
-            <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
-            <p>This video showcases her fingerpicking and percussive movements, highlighting her dynamic connection with the guitar.</p>
+        <!-- Clarinetist Section -->
+        <div id="clarinetist" class="musician-section section">
+            <h2>Clarinetist</h2>
+            <p>[Clarinetist’s information goes here]</p>
         </div>
 
-        <!-- Background Section -->
-        <div class="section">
-            <h2>Background & Origin</h2>
-            <p>Starting in secondary school, she was drawn to the guitar by her school’s strong music culture. Friends taught her basic chords, and she was soon captivated by the guitar's versatility for accompaniment and its ease of learning compared to the piano.</p>
+        <!-- Violinist Section -->
+        <div id="violinist" class="musician-section section">
+            <h2>Violinist</h2>
+            <p>[Violinist’s information goes here]</p>
         </div>
 
-        <!-- Comfort and Physical Adaptation -->
-        <div class="section">
-            <h2>Comfort & Physical Adaptation</h2>
-            <p>Initially, pressing on steel strings caused discomfort and limited her playing time. Over time, callouses developed, allowing her to play comfortably and adopt techniques to minimize strain, highlighting the physical adaptation required to master her instrument.</p>
+        <!-- Drummer Section -->
+        <div id="drummer" class="musician-section section">
+            <h2>Drummer</h2>
+            <p>[Drummer’s information goes here]</p>
         </div>
 
-        <!-- Tactile Awareness & Rhythmic Connection -->
-        <div class="section">
-            <h2>Tactile Awareness & Rhythmic Connection</h2>
-            <p>Playing guitar requires a unique tactile awareness, especially during fingerpicking and rhythmic tapping, as seen in the video. She describes this physical engagement as a meaningful part of her relationship with her instrument, contrasting the steadiness of strumming.</p>
-        </div>
-
-        <!-- Emotional Bond with the Guitar -->
-        <div class="section">
-            <h2>Emotional Bond with the Guitar</h2>
-            <p>She views her guitar as a “best friend” rather than an extension of herself. Her attachment goes beyond functionality; she meticulously cleans and cares for her guitar, showing it the care she would for a close companion.</p>
-        </div>
-
-        <!-- Mastery of Touch & Identity Development -->
-        <div class="section">
-            <h2>Mastery of Touch & Identity Development</h2>
-            <p>As her guitar skills improve, she increasingly sees herself as a musician. She believes that achieving greater touch mastery will ultimately affirm her identity as a guitarist, highlighting the importance of technical control in building a musical identity.</p>
-        </div>
-
-        <!-- Reflection Prompt for Visitors -->
-        <div class="section">
-            <h2>Reflection Prompt</h2>
-            <p><strong>Question for Visitors:</strong> How do you connect with the things you use often? Do they feel like extensions of yourself or companions in your journey?</p>
-            <p><em>Share your thoughts by scanning the QR code below:</em></p>
-            <!-- Placeholder for QR code -->
-            <img src="qr-code-placeholder.png" alt="QR Code" style="width: 100px;">
+        <!-- Electone Player Section -->
+        <div id="electone" class="musician-section section">
+            <h2>Electone Player</h2>
+            <p>[Electone player’s information goes here]</p>
         </div>
 
     </div>
