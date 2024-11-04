@@ -81,6 +81,36 @@
             padding-left: 10px;
             border-left: 4px solid #333;
         }
+        /* Collapsible sections */
+        .collapsible {
+            background-color: #f1f1f1;
+            color: #333;
+            cursor: pointer;
+            padding: 10px;
+            width: 100%;
+            border: none;
+            text-align: left;
+            outline: none;
+            font-size: 18px;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .active, .collapsible:hover {
+            background-color: #ccc;
+        }
+        .content {
+            padding: 0 18px;
+            display: none;
+            overflow: hidden;
+            background-color: #fff;
+            border-radius: 8px;
+            margin-top: 5px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .content p {
+            margin: 10px 0;
+            line-height: 1.6;
+        }
     </style>
 </head>
 <body>
@@ -132,8 +162,8 @@
                 <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
             </div>
             <p>Her journey began in secondary school, influenced by friends who played during recess. She was drawn to the guitar's versatility and ease of learning, finding it a flexible instrument for accompaniment.</p>
-            <!-- Additional sections for background, comfort, tactile awareness, etc., as discussed before -->
-                        <h2>Biography and Reflections</h2>
+            
+            <h2>Biography and Reflections</h2>
 
             <!-- Collapsible Sections for Biography -->
             <button class="collapsible">Background & Origin</button>
@@ -171,7 +201,7 @@
             </div>
         </div>
 
-          <!-- JavaScript for Collapsible Sections -->
+        <!-- JavaScript for Collapsible Sections -->
         <script>
             var coll = document.getElementsByClassName("collapsible");
             for (var i = 0; i < coll.length; i++) {
@@ -186,32 +216,28 @@
                 });
             }
         </script>
-        
-        <!-- Clarinetist Section -->
+
+        <!-- Other Musician Sections -->
         <div id="clarinetist" class="musician-section section">
             <h2>Clarinetist</h2>
             <p>[Clarinetist’s information goes here]</p>
         </div>
 
-        <!-- Violinist Section -->
         <div id="violinist" class="musician-section section">
             <h2>Violinist</h2>
             <p>[Violinist’s information goes here]</p>
         </div>
 
-        <!-- Drummer Section -->
         <div id="drummer" class="musician-section section">
             <h2>Drummer</h2>
             <p>[Drummer’s information goes here]</p>
         </div>
 
-        <!-- Electone Player Section -->
         <div id="electone" class="musician-section section">
             <h2>Electone Player</h2>
             <p>[Electone player’s information goes here]</p>
         </div>
-
     </div>
-
 </body>
 </html>
+
