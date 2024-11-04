@@ -152,8 +152,18 @@
             </a>
         </div>
 
+           <!-- Sidebar for Guitarist Section Navigation -->
+        <div class="sidebar">
+            <h3>Guitarist Sections</h3>
+            <a href="#background-origin">Background & Origin</a>
+            <a href="#physical-comfort">Physical Comfort & Adaptation</a>
+            <a href="#tactile-awareness">Tactile Awareness & Rhythmic Connection</a>
+            <a href="#emotional-bond">Emotional Bond with the Guitar</a>
+            <a href="#mastery-touch">Mastery of Touch & Identity Development</a>
+        </div>
+
         <!-- Guitarist Section -->
-        <div id="guitarist" class="musician-section section">
+        <div id="guitarist" class="musician-section section content-section">
             <h2>Guitarist</h2>
             <p><strong>Introduction:</strong> Self-taught guitarist since secondary school, she views her guitar as a ‘best friend,’ a companion that supports her on her musical journey.</p>
             <div class="video">
@@ -162,32 +172,30 @@
                 <iframe src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allowfullscreen></iframe>
             </div>
             <p>Her journey began in secondary school, influenced by friends who played during recess. She was drawn to the guitar's versatility and ease of learning, finding it a flexible instrument for accompaniment.</p>
-            
-            <h2>Biography and Reflections</h2>
 
-            <!-- Collapsible Sections for Biography -->
-            <button class="collapsible">Background & Origin</button>
-            <div class="content">
+            <!-- Content sections for Guitarist -->
+            <div id="background-origin" class="content-section">
+                <h2>Background & Origin</h2>
                 <p>Starting in secondary school, she was drawn to guitar by the school’s vibrant music culture. Friends taught her basic chords, sparking a love for the instrument's versatility.</p>
             </div>
             
-            <button class="collapsible">Physical Comfort & Adaptation</button>
-            <div class="content">
+            <div id="physical-comfort" class="content-section">
+                <h2>Physical Comfort & Adaptation</h2>
                 <p>Initially, the steel strings caused discomfort, limiting her playing time. Over time, callouses formed, allowing her to play with ease. She now appreciates the balance between the physical demands of playing and the comfort developed through practice.</p>
             </div>
             
-            <button class="collapsible">Tactile Awareness & Rhythmic Connection</button>
-            <div class="content">
+            <div id="tactile-awareness" class="content-section">
+                <h2>Tactile Awareness & Rhythmic Connection</h2>
                 <p>Playing guitar requires a unique tactile awareness, especially during fingerpicking and rhythmic tapping, as seen in the video. She describes a conscious physicality when positioning her hands and wrists to play comfortably and effectively.</p>
             </div>
             
-            <button class="collapsible">Emotional Bond with the Guitar</button>
-            <div class="content">
+            <div id="emotional-bond" class="content-section">
+                <h2>Emotional Bond with the Guitar</h2>
                 <p>She likens her guitar to a ‘best friend’ rather than an extension of herself. Her attachment goes beyond functionality; she regularly cleans and cares for her guitar, seeing it as a companion that brings her comfort.</p>
             </div>
             
-            <button class="collapsible">Mastery of Touch & Identity Development</button>
-            <div class="content">
+            <div id="mastery-touch" class="content-section">
+                <h2>Mastery of Touch & Identity Development</h2>
                 <p>As she hones her guitar skills, she begins to see herself as a musician on the path to mastery. She believes that improving her touch and control will affirm her identity as a guitarist.</p>
             </div>
 
@@ -199,24 +207,8 @@
                 <!-- Placeholder for QR code -->
                 <img src="qr-code-placeholder.png" alt="QR Code" style="width: 100px;">
             </div>
+            
         </div>
-
-        <!-- JavaScript for Collapsible Sections -->
-        <script>
-            var coll = document.getElementsByClassName("collapsible");
-            for (var i = 0; i < coll.length; i++) {
-                coll[i].addEventListener("click", function() {
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.display === "block") {
-                        content.style.display = "none";
-                    } else {
-                        content.style.display = "block";
-                    }
-                });
-            }
-        </script>
-
         <!-- Other Musician Sections -->
         <div id="clarinetist" class="musician-section section">
             <h2>Clarinetist</h2>
