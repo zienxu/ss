@@ -6,4 +6,5 @@
 
 ![lucius photo](https://github.com/user-attachments/assets/5f34cbb5-0ffd-49f5-9711-6ac8714102db)
 
-![music background photo](https://github.com/user-attachments/assets/e63ad33d-23dd-473e-bbe7-255dacbc8953)
+<img width="458" alt="{3397FC48-C03D-472D-92F1-7BB0660351B2}" src="https://github.com/user-attachments/assets/74fceb6e-84cd-4010-92d0-900e0c983924">
+
