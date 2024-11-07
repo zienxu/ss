@@ -9,9 +9,10 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background: linear-gradient(120deg, #f3f4f6, #dde1e7);
-            background-size: 400% 400%;
-            animation: gradientBackground 10s ease infinite;        
+            background-image: url('https://github.com/user-attachments/assets/74fceb6e-84cd-4010-92d0-900e0c983924'); /* Replace with your image path */
+            background-repeat: repeat;
+            background-size: cover; /* Adjusts the pattern size */
+            background-attachment: fixed; /* Keeps the pattern static when scrolling */    
         }
         
         @keyframes gradientBackground { /* Added */
@@ -27,6 +28,7 @@
             background: rgba(255, 255, 255, 0.9);
             border-radius: 12px;
             padding: 20px; /* Added */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
         }
         header {
             text-align: center;
