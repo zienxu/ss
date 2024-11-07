@@ -9,27 +9,51 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f7f7f7;
+            background: linear-gradient(120deg, #f3f4f6, #dde1e7);
+            background-size: 400% 400%;
+            animation: gradientBackground 10s ease infinite;        
         }
+        
+        @keyframes gradientBackground { /* Added */
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+        
         .container {
             width: 80%;
             margin: auto;
             overflow: hidden;
+            background: rgba(255, 255, 255, 0.9);
+            border-radius: 12px;
+            padding: 20px; /* Added */
         }
         header {
             text-align: center;
             padding: 20px 0;
             background: #333;
             color: white;
+            border-radius: 8px; /* Added */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Added */
         }
         header h1 {
             margin: 0;
+            font-size: 2.5rem; /* Enhanced */
         }
         .intro, .section {
             margin: 20px 0;
             padding: 20px;
             background: #fff;
-            border-radius: 8px;
+            border-radius: 12px; /* Enhanced */
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Enhanced */
+        }
+
+        .musician-section img.instrument-image { /* Added */
+            width: 100%;
+            height: auto;
+            max-width: 600px;
+            margin-bottom: 15px;
+            border-radius: 10px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .section h2 {
@@ -49,6 +73,7 @@
             width: 100%;
             height: 400px;
             border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .quote {
             font-style: italic;
@@ -56,6 +81,9 @@
             margin: 10px 0;
             padding-left: 10px;
             border-left: 4px solid #333;
+            background: #f9f9f9;
+            border-radius: 4px; /* Added */
+            padding: 10px; /* Added */
         }
         /* Styling for individual content boxes */
         .content-box {
@@ -103,6 +131,10 @@
             object-fit: cover; /* Ensures the image covers the space without distortion */
             border-radius: 8px;
             margin-bottom: 10px;
+            transition: transform 0.2s; /* Added */
+        }
+        .musician-button img:hover { /* Added */
+            transform: scale(1.05);
         }
         .musician-button p {
             margin: 5px 0 0;
@@ -117,10 +149,27 @@
             border-radius: 5px;
             cursor: pointer;
             font-size: 16px;
-            margin: 10px 0;
+            margin: 15px 0; /* Adjusted */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Added */
+            transition: background-color 0.2s; /* Added */
         }
         .toggle-button:hover {
             background-color: #555;
+        }
+        /* Added CSS for pictures of instruments */
+        .instrument-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+
+        .instrument-container img {
+            width: 100px;
+            height: auto;
+            margin: 0 10px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         /* Hide sections initially */
         .musician-content {
@@ -181,6 +230,11 @@
 
         <!-- Guitarist Section -->
         <div id="guitarist" class="musician-section section">
+            <!-- Instrument Image for the Guitarist -->
+            <div class="instrument-container"> <!-- Added -->
+                <img src="guitar-image.jpg" alt="Guitar" class="instrument-image"> <!-- Replace with the actual path -->
+            </div>
+            
             <h2>Guitarist</h2>
              <!-- Add Image of Guitarist -->
             <img src="https://github.com/user-attachments/assets/995b33c4-d4d2-4bf3-b6c1-012a15a4d62f" alt="Guitarist Image" style="width:150px; border-radius:8px; margin-bottom: 10px;">
@@ -237,6 +291,11 @@
         </div>
         <!-- Other Musician Sections -->
         <div id="clarinetist" class="musician-section section">
+            <!-- Instrument Image for the Guitarist -->
+            <div class="instrument-container"> <!-- Added -->
+                <img src="clarinet-image.jpg" alt="Clarinet" class="instrument-image"> <!-- Replace with the actual path -->
+            </div>
+            
             <h2>Clarinetist</h2>
              <!-- Add Image of Clarinetist -->
             <img src="https://github.com/user-attachments/assets/3737671e-2a3a-43e5-a9f4-d75a941fd58c" alt="Clarinetist Image" style="width:150px; border-radius:8px; margin-bottom: 10px;">
@@ -294,6 +353,11 @@
         </div>
 
         <div id="violinist" class="musician-section section">
+            <!-- Instrument Image for the Guitarist -->
+            <div class="instrument-container"> <!-- Added -->
+                <img src="violin-image.jpg" alt="Violin" class="instrument-image"> <!-- Replace with the actual path -->
+            </div>
+            
             <h2>Violinist</h2>
              <!-- Add Image of Violinist -->
             <img src="https://github.com/user-attachments/assets/f1754e60-214f-4d94-9c2a-8efff95d21d7" alt="Violinist Image" style="width:150px; border-radius:8px; margin-bottom: 10px;">
@@ -348,6 +412,11 @@
         </div>
 
         <div id="drummer" class="musician-section section">
+            <!-- Instrument Image for the Guitarist -->
+            <div class="instrument-container"> <!-- Added -->
+                <img src="drums-image.jpg" alt="Drums" class="instrument-image"> <!-- Replace with the actual path -->
+            </div>
+            
             <h2>Drummer</h2>
              <!-- Add Image of Drummer -->
             <img src="https://github.com/user-attachments/assets/5f34cbb5-0ffd-49f5-9711-6ac8714102db" alt="Drummer Image" style="width:150px; border-radius:8px; margin-bottom: 10px;">
@@ -403,6 +472,11 @@
     </div>
 
         <div id="electone" class="musician-section section">
+            <!-- Instrument Image for the Guitarist -->
+            <div class="instrument-container"> <!-- Added -->
+                <img src="electone-image.jpg" alt="Electone" class="instrument-image"> <!-- Replace with the actual path -->
+            </div>
+            
             <h2>Electone Player</h2>
              <!-- Add Image of Electone player -->
             <img src="images.png" alt="Electone Image" style="width:150px; border-radius:8px; margin-bottom: 10px;">
