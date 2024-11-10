@@ -8,3 +8,4 @@
 
 <img width="458" alt="{3397FC48-C03D-472D-92F1-7BB0660351B2}" src="https://github.com/user-attachments/assets/74fceb6e-84cd-4010-92d0-900e0c983924">
 
+![audrie_photo](https://github.com/user-attachments/assets/30fd0f06-ca92-422a-b0b2-b996f875a1af)
